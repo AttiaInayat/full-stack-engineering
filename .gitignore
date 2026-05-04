@@ -1,0 +1,16 @@
+# --- FastAPI / Python Specifics ---
+fastapi/__pycache__/
+fastapi/.env
+fastapi/venv/
+fastapi/*.pyc
+
+# --- Frontend / Node Specifics ---
+# This ignores the node_modules inside your specific path
+fastapi/frontend/node_modules/
+fastapi/frontend/.env
+fastapi/frontend/dist/
+fastapi/frontend/build/
+
+# --- System Files ---
+.DS_Store
+Thumbs.db
