@@ -34,8 +34,22 @@ alembic/__pycache__/
 # OS
 .DS_Store
 
-backend/.env
-backend/node_modules/
+# Dependency directories (Nested inside subfolders)
+**/node_modules/
+
+# Local environment configuration files (Contains sensitive keys/secrets)
+**/subfolder/.env
+**/.env
+**/.env.local
+**/backend/.env
+**/Backend/.env
+**/complete-backend/.env
+
+# Production build outputs (Optional, but highly recommended for the Frontend)
+**/frontend/dist/
+**/frontend/build/
+**/Frontend/dist/
+**/Frontend/build/
 
 sql-alchemy-alembic/.env
 sql-alchemy-alembic/venv/
