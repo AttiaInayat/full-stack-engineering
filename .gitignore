@@ -38,12 +38,15 @@ alembic/__pycache__/
 **/node_modules/
 
 # Local environment configuration files (Contains sensitive keys/secrets)
-**/subfolder/.env
+# Dependencies
+
+
+# Environments & Secrets
+# This automatically blocks ANY file ending in .env, no matter what subfolder it is in
 **/.env
 **/.env.local
-**/backend/.env
-**/Backend/.env
-**/complete-backend/.env
+**/.env.development
+**/.env.production
 
 # Production build outputs (Optional, but highly recommended for the Frontend)
 **/frontend/dist/
