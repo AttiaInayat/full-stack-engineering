@@ -1,15 +1,15 @@
 # --- FastAPI / Python Specifics ---
-fastapi/__pycache__/
-fastapi/.env
-fastapi/venv/
-fastapi/*.pyc
+FastAPI/__pycache__/
+FastAPI/.env
+FastAPI/venv/
+FastAPI/*.pyc
 
 # --- Frontend / Node Specifics ---
 # This ignores the node_modules inside your specific path
-fastapi/frontend/node_modules/
-fastapi/frontend/.env
-fastapi/frontend/dist/
-fastapi/frontend/build/
+FastAPI/frontend/node_modules/
+FastAPI/frontend/.env
+FastAPI/frontend/dist/
+FastAPI/frontend/build/
 
 # --- System Files ---
 .DS_Store
@@ -54,7 +54,7 @@ alembic/__pycache__/
 **/Frontend/dist/
 **/Frontend/build/
 
-sql-alchemy-alembic/.env
-sql-alchemy-alembic/venv/
-sql-alchemy-alembic/alembic.ini 
-sql-alchemy-alembic/app/__pycache__/
+SQLAlchemy__Alembic/.env
+SQLAlchemy__Alembic/venv/
+SQLAlchemy__Alembic/alembic.ini 
+SQLAlchemy__Alembic/app/__pycache__/
