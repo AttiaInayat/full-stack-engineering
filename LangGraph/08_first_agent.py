@@ -1,4 +1,4 @@
-from typing import TypingDict, Annotated
+from typing import TypedDict, Annotated
 
 from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
@@ -8,6 +8,8 @@ from langchain_core.tools import tool
 from langgraph.prebuilt import ToolNode
 
 from dotenv import load_dotenv
+
+load_dotenv()
 
 class State(TypedDict):
     messages: Annotated[list, add_messages]
@@ -40,7 +42,7 @@ builder.add_node("chatbot", chatbot)
 builder.add_node("tools", ToolNode([add_numbers]))
 
 builder.add_edge(START, "chatbot")
-builder.add_conditional_edge(
+builder.add_conditional_edges(
     "chatbot",
     router,
     {
