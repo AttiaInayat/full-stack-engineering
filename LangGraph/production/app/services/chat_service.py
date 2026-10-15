@@ -1,4 +1,4 @@
-from 20_app.graph.chatbot import run_chatbot
+from production.app.graph.chatbot import run_chatbot
 
 
 def chat(message: str) -> str:
